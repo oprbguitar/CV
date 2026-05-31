@@ -39,7 +39,6 @@ svg { width: 1.15rem; height: 1.15rem; fill: none; stroke: currentColor; stroke-
 .button-primary { color: #fff; background: linear-gradient(135deg, var(--teal), #00c9c3); }
 .button-light { color: var(--teal-dark); border-color: var(--teal); background: #fff; }
 .button-outline { padding: 9px 14px; color: #00e7e1; border-color: #00bfc4; }
-.header-download { white-space: nowrap; }
 .menu-toggle { display: none; }
 .hero { min-height: 520px; display: grid; grid-template-columns: 280px minmax(400px, 1fr) minmax(300px, .95fr); align-items: center; gap: clamp(26px, 4vw, 60px); overflow: hidden; }
 .hero-orbit { position: relative; }
@@ -128,7 +127,7 @@ h2 { margin: 12px 0; font-size: clamp(38px, 4vw, 60px); line-height: 1; letter-s
   .section-grid { grid-template-columns: 1fr; gap: 28px; }.profile, .education { padding-block: 60px; }.experience { grid-template-columns: 1fr; gap: 24px; }
 }
 @media (max-width: 760px) {
-  .site-header { height: 65px; padding-inline: 18px; }.header-download { display: none; }.menu-toggle { display: grid; gap: 4px; border: 0; background: transparent; }.menu-toggle span { display: block; width: 23px; height: 2px; background: #fff; }
+  .site-header { height: 65px; padding-inline: 18px; }.menu-toggle { display: grid; gap: 4px; border: 0; background: transparent; }.menu-toggle span { display: block; width: 23px; height: 2px; background: #fff; }
   .site-nav { position: absolute; top: 65px; left: 0; right: 0; height: auto; display: grid; gap: 0; padding: 8px 18px 18px; background: var(--navy); transform: translateY(-130%); transition: .3s; }.site-nav.open { transform: translateY(0); }.site-nav a { padding: 12px 0; }.site-nav a::after { bottom: 5px; right: auto; width: 30px; }
   .hero { min-height: auto; display: flex; flex-direction: column; align-items: flex-start; gap: 27px; padding-block: 44px; }.portrait-ring { width: 170px; height: 170px; }h1 { font-size: 52px; }.hero-role { font-size: 12px; }.quick-links { display: grid; }
   .stats { grid-template-columns: repeat(2, 1fr); gap: 8px; padding-inline: 18px; }.stats article { grid-template-columns: 36px 1fr; padding: 13px; }.stats svg { width: 33px; height: 33px; padding: 7px; }.stats strong { font-size: 24px; }.stats span { font-size: 9px; }
