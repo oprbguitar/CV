@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="stylesheet" href="styles.css?v=5" />
   </head>
   <body>
     <header class="site-header">
@@ -16,8 +16,11 @@
         <span class="brand-mark">OP</span>
         <span><strong>Oscar Pierre</strong><small>Ingeniero industrial</small></span>
       </a>
-      <div class="header-note">Procesos <i></i> Analítica <i></i> Transformación digital</div>
       <div class="header-links">
+        <button class="theme-toggle" type="button" aria-label="Activar modo noche" aria-pressed="false">
+          <svg class="icon-moon"><use href="#icon-moon"></use></svg>
+          <svg class="icon-sun"><use href="#icon-sun"></use></svg>
+        </button>
         <a href="mailto:peru.labs.pe@gmail.com"><svg><use href="#icon-mail"></use></svg><span>Contacto</span></a>
         <a href="https://www.linkedin.com/in/sr-reyes-briones" target="_blank" rel="noreferrer"><svg><use href="#icon-linkedin"></use></svg><span>LinkedIn</span></a>
       </div>
@@ -62,10 +65,10 @@
       <section class="skills panel">
         <div class="panel-title"><svg><use href="#icon-spark"></use></svg><h2>Habilidades que generan impacto</h2></div>
         <div class="skill-grid">
-          <article><svg><use href="#icon-process"></use></svg><div><b>Procesos + BPMN</b><span>Ordenar flujos y detectar mejoras</span></div></article>
-          <article><svg><use href="#icon-chart"></use></svg><div><b>Power BI + SQL</b><span>Convertir datos en decisiones</span></div></article>
-          <article><svg><use href="#icon-ai"></use></svg><div><b>IA + automatización</b><span>Reducir carga operativa</span></div></article>
-          <article><svg><use href="#icon-money"></use></svg><div><b>Gestión presupuestal</b><span>Dar seguimiento físico y financiero</span></div></article>
+          <article><svg><use href="#icon-process"></use></svg><div><b>Procesos + BPMN</b><span>Ordenar flujos y detectar mejoras</span><i style="--impact:95%"></i></div><strong>95%</strong></article>
+          <article><svg><use href="#icon-chart"></use></svg><div><b>Power BI + SQL</b><span>Convertir datos en decisiones</span><i style="--impact:90%"></i></div><strong>90%</strong></article>
+          <article><svg><use href="#icon-ai"></use></svg><div><b>IA + automatización</b><span>Reducir carga operativa</span><i style="--impact:88%"></i></div><strong>88%</strong></article>
+          <article><svg><use href="#icon-money"></use></svg><div><b>Gestión presupuestal</b><span>Seguimiento físico y financiero</span><i style="--impact:92%"></i></div><strong>92%</strong></article>
         </div>
       </section>
 
@@ -80,7 +83,7 @@
       </section>
 
       <section class="projects panel">
-        <div class="panel-title"><svg><use href="#icon-folder"></use></svg><h2>Proyectos destacados</h2><small>Selecciona para explorar</small></div>
+        <div class="panel-title"><svg><use href="#icon-folder"></use></svg><h2>Simulación de datos</h2><small>Selecciona para explorar</small></div>
         <div class="project-grid">
           <a class="project project-teal" href="https://oprbguitar.github.io/contrataciones/" target="_blank" rel="noreferrer">
             <svg><use href="#icon-handshake"></use></svg><div><b>Contrataciones</b><span>Gestión pública</span></div><i>↗</i>
@@ -97,6 +100,8 @@
 
     <svg class="svg-defs" aria-hidden="true">
       <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20 15a8 8 0 0 1-11-11 8.5 8.5 0 1 0 11 11Z"/></symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
       <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M5 9v10M5 5v.01M10 19v-6a4 4 0 0 1 8 0v6M10 9v10"/></symbol>
       <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/></symbol>
       <symbol id="icon-building" viewBox="0 0 24 24"><path d="M4 20h16M5 9h14M7 9v9m5-9v9m5-9v9M3 9l9-5 9 5"/></symbol>
@@ -115,5 +120,6 @@
       <symbol id="icon-plane" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
       <symbol id="icon-chat" viewBox="0 0 24 24"><path d="M20 15a4 4 0 0 1-4 4H9l-5 3v-7a4 4 0 0 1-1-3V7a4 4 0 0 1 4-4h9a4 4 0 0 1 4 4Z"/><path d="M7 8h9m-9 4h6"/></symbol>
     </svg>
+    <script src="script.js?v=5"></script>
   </body>
 </html>
