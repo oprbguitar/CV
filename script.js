@@ -54,3 +54,22 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: "-35% 0px -55% 0px" });
 
 sections.forEach((section) => sectionObserver.observe(section));
+
+const hero = document.querySelector(".hero");
+const heroVisual = document.querySelector(".hero-visual");
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+if (heroVisual && !reducedMotion.matches) {
+  hero.addEventListener("pointermove", (event) => {
+    const bounds = hero.getBoundingClientRect();
+    const x = ((event.clientX - bounds.left) / bounds.width - 0.5) * 12;
+    const y = ((event.clientY - bounds.top) / bounds.height - 0.5) * 10;
+    heroVisual.style.setProperty("--shift-x", `${x}px`);
+    heroVisual.style.setProperty("--shift-y", `${y}px`);
+  });
+
+  hero.addEventListener("pointerleave", () => {
+    heroVisual.style.setProperty("--shift-x", "0px");
+    heroVisual.style.setProperty("--shift-y", "0px");
+  });
+}
