@@ -1,17 +1,17 @@
 # CV · Oscar Pierre Reyes Briones
 
-CV interactivo en una sola pantalla — diseño "Bauhaus Color Block" con bloques asimétricos, paleta ivory + navy + arcilla + mostaza, e íconos reales del stack.
+CV interactivo responsive — diseño "Bauhaus Color Block" con bloques asimétricos, paleta ivory + navy + arcilla + mostaza, dark mode e íconos reales del stack.
 
 **Publicado vía GitHub Pages desde la rama `main`.**
 
 ## Estructura
 
 ```
-index.html                  · entry point (escala 1440×900 al viewport)
+index.html                  · entry point responsive + estilos globales
 variants/
   shared.jsx                · CV_DATA + Icon helper
   tool-icons.jsx            · íconos SVG del stack (Power BI, Excel, SQL, …)
-  C-bauhaus.jsx             · componente principal del CV
+  C-bauhaus.jsx             · componente principal del CV + dark mode
 assets/
   pierre.png                · retrato
 ```
