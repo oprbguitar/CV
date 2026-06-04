@@ -137,7 +137,7 @@ function MetricsBlock() {
         <div>
           <span>Datos + método</span>
           <h2>Manejo de datos con perfil sistemático</h2>
-          <p>Orden, validación, trazabilidad y lectura analítica para convertir información compleja en decisiones confiables.</p>
+          <p>Orden, validación y trazabilidad para convertir información compleja en decisiones confiables.</p>
         </div>
         <div className="data-pulse" aria-hidden="true">
           <i />
