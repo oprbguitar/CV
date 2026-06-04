@@ -109,10 +109,6 @@ function PhotoBlock() {
     <section className="photo-block">
       <span className="photo-orbit" />
       <img src={CV_DATA.photo} alt="Retrato profesional de Oscar Pierre Reyes Briones" />
-      <div className="photo-badge">
-        <small>Ingeniero industrial</small>
-        <strong>Desde 2010</strong>
-      </div>
     </section>
   );
 }
@@ -137,6 +133,18 @@ function HeroBlock() {
 function MetricsBlock() {
   return (
     <section className="metrics-block">
+      <article className="data-profile-card">
+        <div>
+          <span>Datos + método</span>
+          <h2>Manejo de datos con perfil sistemático</h2>
+          <p>Orden, validación, trazabilidad y lectura analítica para convertir información compleja en decisiones confiables.</p>
+        </div>
+        <div className="data-pulse" aria-hidden="true">
+          <i />
+          <i />
+          <i />
+        </div>
+      </article>
       {CV_DATA.metrics.map((m, i) => (
         <article key={m.v} className={`metric metric-${i}`}>
           <strong>{m.k}</strong>
