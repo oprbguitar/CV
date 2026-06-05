@@ -40,6 +40,7 @@ const CV_DATA = {
     { name: "Congreso", area: "Datos legislativos", url: "https://oprbguitar.github.io/Congreso/" },
     { name: "Políticas SST", area: "Seguridad y salud", url: "https://oprbguitar.github.io/SST/" },
     { name: "Almacenes", area: "Logística", url: "https://oprbguitar.github.io/Almacenes/" },
+    { name: "ENIA 2026-2030", area: "Estrategia nacional de IA", url: "https://oprbguitar.github.io/ENIA-2026-2030/", featured: true },
   ],
   tools: ["Power BI", "SQL", "App Script", "Gemini", "NotebookLM", "Excel", "SIAF", "Workspace"],
 };

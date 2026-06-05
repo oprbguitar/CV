@@ -215,7 +215,7 @@ function ProjectsBlock() {
       <BauhausHead num="03" title="Simulación de datos" accent="var(--mustard)" inverted />
       <div className="projects-list">
         {CV_DATA.projects.map((p, i) => (
-          <a key={p.name} href={p.url} target="_blank" rel="noreferrer">
+          <a key={p.name} className={p.featured ? "featured-project" : ""} href={p.url} target="_blank" rel="noreferrer">
             <span>0{i + 1}</span>
             <strong>{p.name}</strong>
             <em>{p.area}</em>
