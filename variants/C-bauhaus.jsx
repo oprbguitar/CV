@@ -83,6 +83,13 @@ const projectMeta = {
     tags: ["Logística", "Inventario", "Gestión"],
     tone: "orange",
   },
+  "Guía de procesos": {
+    category: "Procesos",
+    description: "Guía práctica para comprender, ordenar y mejorar procesos con enfoque simple y visual.",
+    impact: "Facilita diagnóstico, estandarización y mejora continua de flujos de trabajo.",
+    tags: ["Procesos", "BPMN", "Mejora"],
+    tone: "green",
+  },
 };
 
 const toolGroups = [

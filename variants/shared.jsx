@@ -42,6 +42,7 @@ const CV_DATA = {
     { name: "Congreso", area: "Datos legislativos", url: "https://oprbguitar.github.io/Congreso/" },
     { name: "Políticas SST", area: "Seguridad y salud", url: "https://oprbguitar.github.io/SST/" },
     { name: "Almacenes", area: "Logística", url: "https://oprbguitar.github.io/Almacenes/" },
+    { name: "Guía de procesos", area: "Procesos y mejora continua", url: "https://oprbguitar.github.io/guia_procesos/" },
   ],
   tools: [
     "ChatGPT", "Gemini", "NotebookLM", "Claude", "Grok", "Ollama", "Perplexity", "Codex", "Copilot",
