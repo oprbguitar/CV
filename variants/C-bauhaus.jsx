@@ -153,11 +153,6 @@ function BauhausCV() {
         <DataPanel />
         <ToolsPanel />
       </aside>
-      <footer className="value-strip">
-        {["Rigor metodológico", "Gestión pública y privada", "Innovación con IA", "Resultados sostenibles", "Ética y transparencia"].map((v) => (
-          <span key={v}><Icon name="spark" size={15} /> {v}</span>
-        ))}
-      </footer>
     </div>
   );
 }
