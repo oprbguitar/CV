@@ -108,19 +108,31 @@ function BauhausCV() {
   return (
     <div className="cv-shell" style={themeVars(t)}>
       <Topbar mode={mode} onToggle={() => setMode(mode === "dark" ? "light" : "dark")} />
-      <aside className="profile-card">
-        <img src={CV_DATA.photo} alt="Retrato profesional de Oscar Pierre Reyes Briones" />
-        <div className="profile-copy">
-          <h1>OSCAR <span>PIERRE</span></h1>
-          <p className="role">{CV_DATA.role}</p>
-          <p>{CV_DATA.summary}</p>
-          <ul>
-            <li><Icon name="spark" size={18} /> Enfoque estratégico</li>
-            <li><Icon name="chart" size={18} /> Decisiones basadas en datos</li>
-            <li><Icon name="process" size={18} /> Procesos eficientes y escalables</li>
-            <li><Icon name="eye" size={18} /> Cumplimiento y confianza</li>
-          </ul>
-        </div>
+      <aside className="left-column">
+        <section className="profile-card">
+          <img src={CV_DATA.photo} alt="Retrato profesional de Oscar Pierre Reyes Briones" />
+          <div className="profile-copy">
+            <h1>OSCAR <span>PIERRE</span></h1>
+            <p className="role">{CV_DATA.role}</p>
+            <p>{CV_DATA.summary}</p>
+            <ul>
+              <li><Icon name="spark" size={18} /> Enfoque estratégico</li>
+              <li><Icon name="chart" size={18} /> Decisiones basadas en datos</li>
+              <li><Icon name="process" size={18} /> Procesos eficientes y escalables</li>
+              <li><Icon name="eye" size={18} /> Cumplimiento y confianza</li>
+            </ul>
+          </div>
+        </section>
+        <section className="skills-card">
+          <h3>Habilidades de impacto</h3>
+          {CV_DATA.skills.map((skill) => (
+            <article key={skill.name}>
+              <div><strong>{skill.name}</strong><span>{skill.impact}%</span></div>
+              <i><b style={{ width: `${skill.impact}%` }} /></i>
+              <p>{skill.blurb}</p>
+            </article>
+          ))}
+        </section>
       </aside>
       <main className="main-stage">
         <section className="hero-projects">
@@ -131,11 +143,6 @@ function BauhausCV() {
           </div>
           <Icon name="folder" size={92} />
         </section>
-        <section className="project-filters" aria-label="Categorías de proyectos">
-          {["Todos", "IA pública", "Comercio", "Gestión pública", "Seguridad y salud", "Datos"].map((item, i) => (
-            <span key={item} className={i === 0 ? "active" : ""}>{item}</span>
-          ))}
-        </section>
         <section className="project-grid">
           {CV_DATA.projects.map((project, index) => (
             <ProjectCard key={project.name} project={project} index={index} />
@@ -145,18 +152,7 @@ function BauhausCV() {
       <aside className="right-rail">
         <DataPanel />
         <ToolsPanel />
-        <ContactPanel />
       </aside>
-      <section className="skills-card">
-        <h3>Habilidades de impacto</h3>
-        {CV_DATA.skills.map((skill) => (
-          <article key={skill.name}>
-            <div><strong>{skill.name}</strong><span>{skill.impact}%</span></div>
-            <i><b style={{ width: `${skill.impact}%` }} /></i>
-            <p>{skill.blurb}</p>
-          </article>
-        ))}
-      </section>
       <footer className="value-strip">
         {["Rigor metodológico", "Gestión pública y privada", "Innovación con IA", "Resultados sostenibles", "Ética y transparencia"].map((v) => (
           <span key={v}><Icon name="spark" size={15} /> {v}</span>
@@ -234,19 +230,6 @@ function ToolsPanel() {
           </div>
         </div>
       ))}
-    </section>
-  );
-}
-
-function ContactPanel() {
-  return (
-    <section className="contact-panel">
-      <Icon name="arrowUp" size={28} />
-      <div>
-        <h3>¿Tienes un reto en mente?</h3>
-        <p>Hablemos sobre cómo convertir tus datos y procesos en resultados medibles.</p>
-        <a href={`mailto:${CV_DATA.email}`}>Contactar →</a>
-      </div>
     </section>
   );
 }
