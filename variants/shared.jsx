@@ -4,9 +4,9 @@ const CV_DATA = {
   surname: "Reyes Briones",
   initials: "OP",
   role: "Ingeniero Industrial",
-  taglineBits: ["Gestión pública", "Procesos", "Analítica", "IA aplicada"],
+  taglineBits: ["Gestión pública y privada", "Procesos", "Analítica", "IA aplicada"],
   summary:
-    "Más de 15 años convirtiendo procesos e información compleja en decisiones claras, medibles y accionables para el sector público.",
+    "Más de 15 años convirtiendo procesos e información compleja en decisiones claras, medibles y accionables para el sector público y privado.",
   email: "peru.labs.pe@gmail.com",
   linkedin: "linkedin.com/in/sr-reyes-briones",
   photo: "assets/pierre.png",
@@ -35,14 +35,15 @@ const CV_DATA = {
     ],
   },
   projects: [
+    { name: "ENIA 2026-2030", area: "Estrategia nacional de IA", url: "https://oprbguitar.github.io/ENIA-2026-2030/", featured: true },
+    { name: "Demo tienda online", area: "E-commerce demostrativo", url: "https://oprbguitar.github.io/demo_tienda/", featured: true },
     { name: "Contrataciones", area: "Gestión pública", url: "https://oprbguitar.github.io/contrataciones/" },
     { name: "SecData Perú", area: "Analítica & seguridad", url: "https://oprbguitar.github.io/SecData-peru/" },
     { name: "Congreso", area: "Datos legislativos", url: "https://oprbguitar.github.io/Congreso/" },
     { name: "Políticas SST", area: "Seguridad y salud", url: "https://oprbguitar.github.io/SST/" },
     { name: "Almacenes", area: "Logística", url: "https://oprbguitar.github.io/Almacenes/" },
-    { name: "ENIA 2026-2030", area: "Estrategia nacional de IA", url: "https://oprbguitar.github.io/ENIA-2026-2030/", featured: true },
   ],
-  tools: ["Power BI", "SQL", "App Script", "Gemini", "NotebookLM", "Excel", "SIAF", "Workspace"],
+  tools: ["ChatGPT", "Gemini", "NotebookLM", "Claude", "Grok", "Ollama", "Perplexity", "Codex", "Copilot", "Hugging Face", "Llama", "Docker", "GitHub"],
 };
 
 // Iconos SVG inline reutilizables (line, currentColor)

@@ -99,13 +99,16 @@
       .ai-mark span { display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; font-size: 11px; font-weight: 900; letter-spacing: 1.4px; text-transform: uppercase; background: #181613; padding: 8px 12px; }
       .panel-block, .projects-block, .tools-block { min-width: 0; min-height: 0; }
       .skills-block { grid-area: skills; background: var(--paper); border: 1px solid var(--line); padding: clamp(16px, 1.8vw, 22px); display: flex; flex-direction: column; }
-      .projects-block { grid-area: proj; background: #181613; color: #F4ECD8; padding: 11px 15px; display: flex; flex-direction: column; }
-      .tools-block { grid-area: tools; background: var(--clay); color: var(--cream); padding: 14px 16px 12px; display: flex; flex-direction: column; }
+      .projects-block { grid-area: proj; background: #181613; color: #F4ECD8; padding: 8px 12px; display: flex; flex-direction: column; }
+      .tools-block { grid-area: tools; background: var(--clay); color: var(--cream); padding: 8px 10px; display: flex; flex-direction: column; }
       .section-head { display: flex; align-items: center; gap: 10px; }
       .section-head span { font-family: "Archivo", sans-serif; font-weight: 900; font-size: 22px; letter-spacing: -1px; }
       .section-head strong { font-size: 10px; letter-spacing: 2.4px; font-weight: 900; text-transform: uppercase; color: var(--ink); }
       .section-head.inverted strong { color: #F4ECD8; }
       .section-head i { flex: 1; height: 2px; opacity: .5; }
+      .projects-block .section-head, .tools-block .section-head { gap: 7px; }
+      .projects-block .section-head span, .tools-block .section-head span { font-size: 18px; }
+      .projects-block .section-head strong, .tools-block .section-head strong { font-size: 8.5px; letter-spacing: 1.7px; }
       .skills-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 28px; margin-top: 14px; }
       .skill-card h3 { margin: 0; color: var(--ink); font-size: clamp(13px, 1vw, 15px); letter-spacing: -.01em; }
       .skill-top { display: flex; align-items: baseline; gap: 8px; }
@@ -115,19 +118,19 @@
       .skill-track { height: 7px; background: var(--ivory); margin-top: 6px; overflow: hidden; }
       .skill-track i { display: block; height: 100%; }
       .skill-card p { color: var(--muted); margin: 5px 0 0; font-size: 11px; line-height: 1.35; }
-      .projects-list { display: grid; gap: 1px; margin-top: 6px; }
-      .projects-list a { display: grid; grid-template-columns: 24px minmax(0, 1fr) auto 14px; align-items: center; gap: 6px; padding: 3px 0; border-bottom: 1px solid rgba(244,236,216,.18); color: #F4ECD8; }
-      .projects-list a.featured-project { margin: 1px -5px 0; padding: 5px; border: 1px solid rgba(244,201,93,.65); background: linear-gradient(135deg, rgba(244,201,93,.16), rgba(224,120,93,.18)); box-shadow: inset 4px 0 0 #F4C95D; }
-      .projects-list span { font-family: "Archivo", sans-serif; font-weight: 900; font-size: 11px; color: #F4C95D; }
-      .projects-list strong { font-size: 11px; color: #FFF3D7; }
-      .projects-list em { font-style: normal; font-size: 9px; opacity: .86; color: #F4ECD8; white-space: nowrap; }
+      .projects-list { display: grid; gap: 0; margin-top: 4px; }
+      .projects-list a { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto 12px; align-items: center; gap: 5px; padding: 2px 0; border-bottom: 1px solid rgba(244,236,216,.18); color: #F4ECD8; }
+      .projects-list a.featured-project { margin: 1px -4px 0; padding: 3px 4px; border: 1px solid rgba(244,201,93,.65); background: linear-gradient(135deg, rgba(244,201,93,.16), rgba(224,120,93,.18)); box-shadow: inset 4px 0 0 #F4C95D; }
+      .projects-list span { font-family: "Archivo", sans-serif; font-weight: 900; font-size: 10px; color: #F4C95D; }
+      .projects-list strong { font-size: 10px; color: #FFF3D7; }
+      .projects-list em { font-style: normal; font-size: 8px; opacity: .86; color: #F4ECD8; white-space: nowrap; }
       .projects-list a.featured-project em { color: #F4C95D; font-weight: 900; opacity: 1; }
       .projects-list b { color: #F4C95D; }
-      .tools-grid { margin-top: 12px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px; flex: 1; }
-      .tools-grid article { background: color-mix(in srgb, var(--cream) 13%, transparent); border: 1px solid color-mix(in srgb, var(--cream) 24%, transparent); padding: 8px 4px 7px; display: grid; place-items: center; gap: 5px; }
-      .tools-grid article div { width: 32px; height: 32px; display: flex; }
-      .tools-grid span { color: var(--cream); text-align: center; font-size: 9px; line-height: 1.1; font-weight: 900; }
-      .available { margin: 10px 0 0; display: flex; align-items: center; gap: 8px; color: var(--mustard); font-size: 10px; letter-spacing: 1.3px; font-weight: 900; text-transform: uppercase; }
+      .tools-grid { margin-top: 5px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; flex: 1; }
+      .tools-grid article { background: color-mix(in srgb, var(--cream) 13%, transparent); border: 1px solid color-mix(in srgb, var(--cream) 24%, transparent); padding: 3px 2px; display: grid; place-items: center; gap: 2px; min-height: 35px; }
+      .tools-grid article div { width: 20px; height: 20px; display: flex; }
+      .tools-grid span { color: var(--cream); text-align: center; font-size: 6.7px; line-height: 1.02; font-weight: 900; }
+      .available { margin: 4px 0 0; display: flex; align-items: center; gap: 6px; color: var(--mustard); font-size: 7px; letter-spacing: .9px; font-weight: 900; text-transform: uppercase; }
       .available i { width: 8px; height: 8px; border-radius: 50%; background: var(--mustard); box-shadow: 0 0 8px var(--mustard); }
       [data-theme="dark"] body { background: #030A18; }
       [data-theme="dark"] #frame { box-shadow: 0 30px 90px rgba(0,0,0,.6); }
@@ -199,12 +202,19 @@
         .ai-mark strong { display: none; }
         .skills-grid { grid-template-columns: 1fr; gap: 13px; }
         .projects-block { padding: 16px 18px; }
+        .tools-block { padding: 14px 16px 12px; }
+        .projects-block .section-head span, .tools-block .section-head span { font-size: 22px; }
+        .projects-block .section-head strong, .tools-block .section-head strong { font-size: 10px; letter-spacing: 2.4px; }
         .projects-list { gap: 4px; margin-top: 12px; }
         .projects-list a { grid-template-columns: 30px 1fr 18px; padding: 8px 0; }
         .projects-list a.featured-project { margin: 4px 0 0; padding: 10px; }
+        .projects-list span { font-size: 12px; }
+        .projects-list strong { font-size: 12px; }
+        .projects-list em { font-size: 10px; }
         .projects-list em { grid-column: 2; white-space: normal; }
         .projects-list b { grid-column: 3; grid-row: 1 / span 2; }
-        .tools-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+        .tools-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        .tools-grid article { min-height: auto; padding: 8px 4px 7px; gap: 5px; }
         .tools-grid article div { width: 38px; height: 38px; }
         .tools-grid span { font-size: 9.5px; }
       }
@@ -224,9 +234,9 @@
       <div id="frame"><div id="root"></div></div>
     </div>
 
-    <script type="text/babel" src="variants/shared.jsx?v=5"></script>
-    <script type="text/babel" src="variants/tool-icons.jsx?v=5"></script>
-    <script type="text/babel" src="variants/C-bauhaus.jsx?v=5"></script>
+    <script type="text/babel" src="variants/shared.jsx?v=6"></script>
+    <script type="text/babel" src="variants/tool-icons.jsx?v=6"></script>
+    <script type="text/babel" src="variants/C-bauhaus.jsx?v=6"></script>
     <script type="text/babel">
       const { BauhausCV } = window;
       ReactDOM.createRoot(document.getElementById("root")).render(<BauhausCV />);

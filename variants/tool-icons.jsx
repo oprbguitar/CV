@@ -2,6 +2,77 @@
 // Reconocibles pero limpios — formas + colores oficiales.
 
 const ToolIcons = {
+  ChatGPT: (
+    <svg viewBox="0 0 40 40" width="100%" height="100%">
+      <circle cx="20" cy="20" r="15" fill="#111" />
+      <path d="M14 14h12v12H14zM20 8v24M8 20h24" stroke="#fff" strokeWidth="2.2" fill="none" strokeLinecap="round" />
+    </svg>
+  ),
+  Claude: (
+    <svg viewBox="0 0 40 40" width="100%" height="100%">
+      <circle cx="20" cy="20" r="15" fill="#D97745" />
+      <path d="M20 7v26M7 20h26M10.8 10.8l18.4 18.4M29.2 10.8 10.8 29.2" stroke="#fff" strokeWidth="2.4" strokeLinecap="round" />
+    </svg>
+  ),
+  Grok: (
+    <svg viewBox="0 0 40 40" width="100%" height="100%">
+      <circle cx="20" cy="20" r="16" fill="#050505" />
+      <path d="M11 28 29 10M15 12c8 0 13 5 13 13M12 25c0-7 5-12 12-12" stroke="#fff" strokeWidth="3" fill="none" strokeLinecap="round" />
+    </svg>
+  ),
+  Ollama: (
+    <svg viewBox="0 0 40 40" width="100%" height="100%">
+      <rect x="8" y="12" width="24" height="22" rx="8" fill="#fff" stroke="#111" strokeWidth="2.4" />
+      <path d="M14 13V7m12 6V7" stroke="#111" strokeWidth="2.8" strokeLinecap="round" />
+      <circle cx="15" cy="22" r="2" fill="#111" /><circle cx="25" cy="22" r="2" fill="#111" />
+      <path d="M17 28c2 2 4 2 6 0" stroke="#111" strokeWidth="2" fill="none" strokeLinecap="round" />
+    </svg>
+  ),
+  Perplexity: (
+    <svg viewBox="0 0 40 40" width="100%" height="100%">
+      <rect x="9" y="9" width="22" height="22" fill="#E8FFFF" stroke="#0B6B73" strokeWidth="2" />
+      <path d="M20 6v28M10 20h20M12 12l8 8-8 8M28 12l-8 8 8 8" stroke="#0B6B73" strokeWidth="2.2" fill="none" />
+    </svg>
+  ),
+  Codex: (
+    <svg viewBox="0 0 40 40" width="100%" height="100%">
+      <polygon points="20,5 33,13 33,27 20,35 7,27 7,13" fill="#fff" stroke="#111" strokeWidth="2.4" />
+      <path d="m15 15-5 5 5 5m10-10 5 5-5 5m-3-12-4 14" stroke="#111" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  ),
+  Copilot: (
+    <svg viewBox="0 0 40 40" width="100%" height="100%">
+      <defs><linearGradient id="copG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#0EA5E9"/><stop offset=".5" stopColor="#8B5CF6"/><stop offset="1" stopColor="#F97316"/></linearGradient></defs>
+      <rect x="6" y="9" width="28" height="22" rx="7" fill="url(#copG)" />
+      <path d="M13 25c5-8 9-8 14 0" stroke="#fff" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+    </svg>
+  ),
+  "Hugging Face": (
+    <svg viewBox="0 0 40 40" width="100%" height="100%">
+      <circle cx="20" cy="20" r="15" fill="#FFD21E" />
+      <circle cx="15" cy="17" r="2" fill="#553B00" /><circle cx="25" cy="17" r="2" fill="#553B00" />
+      <path d="M14 25c4 4 8 4 12 0M9 24l-5 5m27-5 5 5" stroke="#553B00" strokeWidth="2.4" fill="none" strokeLinecap="round" />
+    </svg>
+  ),
+  Llama: (
+    <svg viewBox="0 0 40 40" width="100%" height="100%">
+      <path d="M13 32V16c0-6 4-10 9-10s8 4 8 10v16" fill="none" stroke="#111" strokeWidth="3" strokeLinecap="round" />
+      <path d="M16 10V5m8 5V5M16 21h9" stroke="#111" strokeWidth="3" strokeLinecap="round" />
+    </svg>
+  ),
+  Docker: (
+    <svg viewBox="0 0 40 40" width="100%" height="100%">
+      <path d="M7 22h24c0 7-5 11-13 11-7 0-11-4-11-11Z" fill="#1687D9" />
+      <path d="M11 18h5v-5h5v5h5v-5h5v5h4v4H11Z" fill="#1687D9" />
+      <circle cx="13" cy="27" r="1.5" fill="#fff" />
+    </svg>
+  ),
+  GitHub: (
+    <svg viewBox="0 0 40 40" width="100%" height="100%">
+      <circle cx="20" cy="20" r="16" fill="#111" />
+      <path d="M14 29c0-3 2-4 6-4s6 1 6 4M14 18c0-5 3-8 6-8s6 3 6 8c0 4-2 7-6 7s-6-3-6-7Z" fill="#fff" />
+    </svg>
+  ),
   "Power BI": (
     <svg viewBox="0 0 40 40" width="100%" height="100%">
       <defs>

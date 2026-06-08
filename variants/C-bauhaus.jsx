@@ -230,7 +230,7 @@ function ProjectsBlock() {
 function ToolsBlock() {
   return (
     <section className="tools-block">
-      <BauhausHead num="04" title="Stack diario" accent="var(--mustard)" inverted />
+      <BauhausHead num="04" title="IA + Stack diario" accent="var(--mustard)" inverted />
       <div className="tools-grid">
         {CV_DATA.tools.map((tool) => (
           <article key={tool}>
