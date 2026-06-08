@@ -126,10 +126,10 @@
       .projects-list em { font-style: normal; font-size: 8px; opacity: .86; color: #F4ECD8; white-space: nowrap; }
       .projects-list a.featured-project em { color: #F4C95D; font-weight: 900; opacity: 1; }
       .projects-list b { color: #F4C95D; }
-      .tools-grid { margin-top: 5px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; flex: 1; }
-      .tools-grid article { background: color-mix(in srgb, var(--cream) 13%, transparent); border: 1px solid color-mix(in srgb, var(--cream) 24%, transparent); padding: 3px 2px; display: grid; place-items: center; gap: 2px; min-height: 35px; }
-      .tools-grid article div { width: 20px; height: 20px; display: flex; }
-      .tools-grid span { color: var(--cream); text-align: center; font-size: 6.7px; line-height: 1.02; font-weight: 900; }
+      .tools-grid { margin-top: 5px; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 3px; flex: 1; }
+      .tools-grid article { background: color-mix(in srgb, var(--cream) 13%, transparent); border: 1px solid color-mix(in srgb, var(--cream) 24%, transparent); padding: 2px 1px; display: grid; place-items: center; gap: 1px; min-height: 29px; }
+      .tools-grid article div { width: 16px; height: 16px; display: flex; }
+      .tools-grid span { color: var(--cream); text-align: center; font-size: 5.9px; line-height: 1; font-weight: 900; }
       .available { margin: 4px 0 0; display: flex; align-items: center; gap: 6px; color: var(--mustard); font-size: 7px; letter-spacing: .9px; font-weight: 900; text-transform: uppercase; }
       .available i { width: 8px; height: 8px; border-radius: 50%; background: var(--mustard); box-shadow: 0 0 8px var(--mustard); }
       [data-theme="dark"] body { background: #030A18; }
@@ -234,9 +234,9 @@
       <div id="frame"><div id="root"></div></div>
     </div>
 
-    <script type="text/babel" src="variants/shared.jsx?v=6"></script>
-    <script type="text/babel" src="variants/tool-icons.jsx?v=6"></script>
-    <script type="text/babel" src="variants/C-bauhaus.jsx?v=6"></script>
+    <script type="text/babel" src="variants/shared.jsx?v=7"></script>
+    <script type="text/babel" src="variants/tool-icons.jsx?v=7"></script>
+    <script type="text/babel" src="variants/C-bauhaus.jsx?v=7"></script>
     <script type="text/babel">
       const { BauhausCV } = window;
       ReactDOM.createRoot(document.getElementById("root")).render(<BauhausCV />);

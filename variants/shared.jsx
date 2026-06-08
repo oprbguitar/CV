@@ -43,7 +43,10 @@ const CV_DATA = {
     { name: "Políticas SST", area: "Seguridad y salud", url: "https://oprbguitar.github.io/SST/" },
     { name: "Almacenes", area: "Logística", url: "https://oprbguitar.github.io/Almacenes/" },
   ],
-  tools: ["ChatGPT", "Gemini", "NotebookLM", "Claude", "Grok", "Ollama", "Perplexity", "Codex", "Copilot", "Hugging Face", "Llama", "Docker", "GitHub"],
+  tools: [
+    "ChatGPT", "Gemini", "NotebookLM", "Claude", "Grok", "Ollama", "Perplexity", "Codex", "Copilot",
+    "Hugging Face", "Llama", "Docker", "GitHub", "Power BI", "SQL", "Excel", "App Script", "SIAF", "Workspace",
+  ],
 };
 
 // Iconos SVG inline reutilizables (line, currentColor)
